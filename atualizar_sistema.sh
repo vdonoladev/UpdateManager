@@ -1,6 +1,6 @@
 # ------------------------------------------------------------------------ #
 # Nome do Script: atualizar_sistema.sh 
-# Descrição:      Update the system using apt command.
+# Descrição:      Atualize o sistema com o comando apt.
 # Site:           https://blogvdonoladev.wordpress.com/
 # Escrito por:    Víctor Donola Ferreira (vdonoladev)
 # Manutenção:     Víctor Donola Ferreira (vdonoladev)
