@@ -1,66 +1,54 @@
-# ------------------------------------------------------------------------ #
-# Nome do Script: atualizar_sistema.sh 
-# Descrição:      Atualize o sistema com o comando apt.
-# Site:           https://blogvdonoladev.wordpress.com/
-# Escrito por:    Víctor Donola Ferreira (vdonoladev)
-# Manutenção:     Víctor Donola Ferreira (vdonoladev)
-# ------------------------------------------------------------------------ #
-# Uso:         
-#       $ ./atualizar_sistema.sh
-# ------------------------------------------------------------------------ #
-
-
 TIME=1
 clear
 while true;do
 echo " "
-echo "SEJA BEM VINDO(A) AS CONFIGURAÇÕES DO UBUNTU!"
+echo "WELCOME TO UBUNTU SETTINGS!"
 echo " "
-echo "Escolha uma opção abaixo para começar!
+echo "Choose an option below to get started!
       
-      1 - Verificar repositório do sistema
-      2 - Mostrar atualizações do sistema
-      3 - Instalar atualizações do sistema
-      4 - Limpar o sistema
-      5 - Remover pacotes não necessários
-      0 - Sair do sistema"
+      1 - Check the system repository
+      2 - Show system updates
+      3 - Install system updates
+      4 - Clean the system
+      5 - Remove unnecessary packages
+      0 - Exit the system"
 echo " "
-echo -n "Opção escolhida: "
-read opcao
-case $opcao in
+echo -n "Chosen option: "
+read option
+case $option in
 	1) 
-		echo Verificando o sistema por atualizações...
+		echo Checking the system for updates ...
 		sleep $TIME
 		apt update
 		;;
 	2)
-		echo Mostrando as atualizações do sistema...
+		echo Showing system updates ...
 		sleep $TIME
 		apt list --upgradable
 		;;
 	3)
-		echo Instalando atualizações do sistema...
+		echo Installing system updates ...
 		sleep $TIME
 		apt upgrade -y
 		;;
 	4)
-		echo Limpando o sistema...
+		echo Cleaning the system ...
 		apt clean
 		apt autoclean
 		;;
 	5) 
-		echo Removendo pacotes desnecessários do sistema...
+		echo Removing unnecessary packages from the system ...
 		sleep $TIME
 		apt autoremove -y
 		;;
 	0)
-		echo Saindo do sistema...
+		echo Exiting the system ...
 		sleep $TIME
 		exit 0
 		;;
 		
 	*)
-		echo Opção inválida, tente novamente!
+		echo Invalid option, try again!
 		;;
 esac
 done
