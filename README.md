@@ -44,11 +44,11 @@ cd UpdateManager
 
 3. **Torne o script executável:**
 
-```chmod +x after-install.sh```
+```chmod +x atualizar_sistema.sh```
 
 4. **Execute o arquivo:**
 
-`sudo bash after-install.sh`
+`sudo bash atualizar_sistema.sh`
 
 5. **Selecione uma opção:**
 
